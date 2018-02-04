@@ -1,0 +1,57 @@
+html, body {
+	height: 100%;
+}
+body > main {
+	padding: 15px;
+	margin-top: -60px;
+	height: 100%;
+	width: 100%;
+	background-color: #F1F1F1;
+	position: absolute;
+	z-index: 0;
+}
+	main > section {
+		max-width: 1240px;
+		margin: 0 auto;
+		display: flex;
+		height: 100%;
+	}
+		main > section > article {
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+			main > section > article > p {
+				font-size: 5em;
+				font-weight: bold;
+				flex-basis: 100%;
+				text-align: center;
+			}
+			main > section > article > p > span:nth-child(1){
+				color: #9B59B6;
+			}
+			main > section > article > p > span:nth-child(2){
+				color: #F43C3E;
+			}
+			main > section > article > p > span:nth-child(3){
+				color: #2ECC71;
+			}
+			main > section > article > p > span:nth-child(4){
+				color: #00A8FF;
+			}
+			main > section > article > p > span:nth-child(5){
+				color: #FA690E;
+			}
+
+			main > section > article > button {
+				flex-basis: 50%;
+			}
+.clearfix::before {
+	content: '';
+	display: table;
+}
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}

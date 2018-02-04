@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TOSLE - Welcome on the download page</title>
+		<link rel="stylesheet" type="text/css" href="libraries/ospaf/css/tosle-lib.css">
+		<link rel="stylesheet" type="text/css" href="css/downloadpage.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<main>
+			<section>
+				<article>
+					<p>
+						<span>T</span><span>O</span><span>S</span><span>L</span><span>E</span> <span>Project</span>
+					</p>
+					<button class="btn btn-lg btn-green" data-type="open-modal" data-target="modal-download">Download</button>
+					<button class="btn btn-lg btn-default">View demo</button>
+				</article>
+			</section>
+		</main>
+
+		<div id="modal-download" class="fade-background" data-type="parent-modal">
+			<div class="modal-window">
+				<div class="modal-header">
+					<i class="modal-header-icon material-icons" data-type="close-modal">close</i>
+					<h2>Téléchargement du CMS TOSLE</h2>
+				</div>
+				<div class="modal-main">
+					<h3>Avant d'aller plus loin</h3>
+					<br>
+					<p>
+						Pour télécharger notre CMS, nous devons vous prévenir que cela requiert un peu de connaissance informatique. Mais rassurez-vous, nous avons un lien à dispotion pour les non initiés : <a href="#">Aide à l'installation - débutant</a>
+					</p>
+					<br>
+					<p>
+						Pour les plus expérimentés d'entre vous, vous pourrez retrouver une aide à l'installation plus rapide : <a href="#">Aide à l'installation</a>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-md btn-blue" onclick="alert('Pas encore dispoblie');">Télécharger le ZIP</button>
+					<button class="btn btn-md btn-green" onclick="document.location.href='https://github.com/TOSLE/tosle';">Lien vers GitHub</button>
+					<button class="btn btn-md btn-red" data-type="close-modal">Fermer la fenêtre</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- OSPAF JAVASCRIPT -->
+		<script src="libraries/ospaf/js/modals.js"></script>
+		<!-- OSPAF JAVASCRIPT -->
+	</body>
+</html>
